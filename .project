@@ -3,6 +3,7 @@
 	<name>orangehrm-selenium-automation</name>
 	<comment></comment>
 	<projects>
+		<project>selenium-helper</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
