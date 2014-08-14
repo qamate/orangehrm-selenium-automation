@@ -3,6 +3,7 @@ Writing and automating test cases for OrangeHRM
 
 Writing and automating test cases for OrangeHRM
 
-This project requires below project ad a dependency
+Manual Test Cases:
+https://github.com/qamate/orangehrm-selenium-automation/blob/master/orangehrm-manual-testcases.xls
 
-https://github.com/qamate/selenium-helper
+Feel free to write back to qamate@outlook.com for any questions.
