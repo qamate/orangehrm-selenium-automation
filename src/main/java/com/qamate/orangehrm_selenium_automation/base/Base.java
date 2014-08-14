@@ -2,16 +2,16 @@ package com.qamate.orangehrm_selenium_automation.base;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 
 public abstract class Base {
-	@BeforeTest
+	@BeforeMethod
 	public void _beforeTest(){
 		driver = new FirefoxDriver();
 		driver.navigate().to("http://localhost/");
 	}
-	@AfterTest
+	@AfterMethod
 	public void _afterTest(){
 		try{
 			driver.close();

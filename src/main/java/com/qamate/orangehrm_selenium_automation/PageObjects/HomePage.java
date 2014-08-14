@@ -14,7 +14,8 @@ public class HomePage {
 	public static WebElement getLoginButton(WebDriver driver){
 		return driver.findElement(By.id("btnLogin"));
 	}
-	public static WebElement getWelcomeMessage(WebDriver driver){
-		return driver.findElement(By.id("welcome"));
+	
+	public static WebElement getErrorMessage(WebDriver driver){
+		return driver.findElement(By.id("spanMessage"));
 	}
 }
