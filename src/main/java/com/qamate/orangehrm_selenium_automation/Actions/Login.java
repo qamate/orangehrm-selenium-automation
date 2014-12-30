@@ -1,9 +1,11 @@
 package com.qamate.orangehrm_selenium_automation.Actions;
 
 import org.openqa.selenium.WebDriver;
+
 import com.qamate.orangehrm_selenium_automation.PageObjects.HomePage;
 
 public class Login {
+	private WebDriver driver;
 	public Login(WebDriver driver){
 		this.driver = driver;
 	}
@@ -12,5 +14,4 @@ public class Login {
 		HomePage.getPasswordTextBox(driver).sendKeys(password);
 		HomePage.getLoginButton(driver).click();
 	}
-	private WebDriver driver;
 }

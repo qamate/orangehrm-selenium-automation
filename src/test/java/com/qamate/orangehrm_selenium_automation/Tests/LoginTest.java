@@ -3,12 +3,12 @@ package com.qamate.orangehrm_selenium_automation.Tests;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.kagrana.base.BaseActions;
 import com.qamate.orangehrm_selenium_automation.Actions.Login;
 import com.qamate.orangehrm_selenium_automation.PageObjects.Dashboard;
 import com.qamate.orangehrm_selenium_automation.PageObjects.HomePage;
-import com.qamate.orangehrm_selenium_automation.base.Base;
 
-public class LoginTest extends Base {
+public class LoginTest extends BaseActions {
 	@Test
 	public void sucessfullLoginTest(){
 		Login login = new Login(driver);
