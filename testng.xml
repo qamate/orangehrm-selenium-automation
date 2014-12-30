@@ -2,7 +2,7 @@
  
 <suite name="smoke-test-suite" parallel="tests" thread-count="5">
 <parameter name="ReportLocation" value="."></parameter>
-<parameter name="remoteURL" value="http://*******:*******@ondemand.saucelabs.com:80/wd/hub"></parameter>
+<parameter name="remoteURL" value="http://mayur_kagrana:a0f8f310-237a-4152-a6b3-757ffea92d52@ondemand.saucelabs.com:80/wd/hub"></parameter>
 <parameter name="baseURL" value="http://opensource.demo.orangehrm.com/"></parameter>
 <parameter name="OS" value="WIN8_1"></parameter>
 <parameter name="browser" value="FIREFOX"></parameter>
@@ -14,4 +14,39 @@
        </class>
     </classes>
 </test>
+<!-- 
+<test name="reportingTest" >
+    <classes>
+       <class name="com.kagrana.base.BaseActionsTest" >
+       </class>
+    </classes>
+</test>
+<test name="reportingTest1" >
+    <classes>
+       <class name="com.kagrana.base.BaseActionsTest1" >
+       </class>
+    </classes>
+</test>
+<test name="reportingTest2" >
+    <classes>
+       <class name="com.kagrana.base.BaseActionsTest2" >
+           
+       </class>
+    </classes>
+</test>
+<test name="reportingTest3" >
+    <classes>
+       <class name="com.kagrana.base.BaseActionsTest3" >
+           
+       </class>
+    </classes>
+</test>
+<test name="reportingTest4" >
+    <classes>
+       <class name="com.kagrana.base.BaseActionsTest4" >
+           
+       </class>
+    </classes>
+</test>
+ -->
 </suite>
