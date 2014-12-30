@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+ 
+<suite name="smoke-test-suite" parallel="tests" thread-count="5">
+<parameter name="ReportLocation" value="."></parameter>
+<parameter name="remoteURL" value="http://*******:*******@ondemand.saucelabs.com:80/wd/hub"></parameter>
+<parameter name="baseURL" value="http://opensource.demo.orangehrm.com/"></parameter>
+<parameter name="OS" value="WIN8_1"></parameter>
+<parameter name="browser" value="FIREFOX"></parameter>
+<parameter name="version" value="34"></parameter>
+<parameter name="internal" value="false"></parameter>
+<test name="SingleTest" >
+    <classes>
+       <class name="com.qamate.orangehrm_selenium_automation.Tests.LoginTest" >
+       </class>
+    </classes>
+</test>
+</suite>
