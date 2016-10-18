@@ -1,52 +1,75 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
  
 <suite name="smoke-test-suite" parallel="tests" thread-count="5">
-<parameter name="ReportLocation" value="."></parameter>
-<parameter name="remoteURL" value="http://mayur_kagrana:a0f8f310-237a-4152-a6b3-757ffea92d52@ondemand.saucelabs.com:80/wd/hub"></parameter>
-<parameter name="baseURL" value="http://opensource.demo.orangehrm.com/"></parameter>
-<parameter name="OS" value="WIN8_1"></parameter>
-<parameter name="browser" value="FIREFOX"></parameter>
-<parameter name="version" value="34"></parameter>
-<parameter name="internal" value="false"></parameter>
-<test name="SingleTest" >
-    <classes>
-       <class name="com.qamate.orangehrm_selenium_automation.Tests.LoginTest" >
-       </class>
-    </classes>
-</test>
-<!-- 
-<test name="reportingTest" >
-    <classes>
-       <class name="com.kagrana.base.BaseActionsTest" >
-       </class>
-    </classes>
-</test>
-<test name="reportingTest1" >
-    <classes>
-       <class name="com.kagrana.base.BaseActionsTest1" >
-       </class>
-    </classes>
-</test>
-<test name="reportingTest2" >
-    <classes>
-       <class name="com.kagrana.base.BaseActionsTest2" >
-           
-       </class>
-    </classes>
-</test>
-<test name="reportingTest3" >
-    <classes>
-       <class name="com.kagrana.base.BaseActionsTest3" >
-           
-       </class>
-    </classes>
-</test>
-<test name="reportingTest4" >
-    <classes>
-       <class name="com.kagrana.base.BaseActionsTest4" >
-           
-       </class>
-    </classes>
-</test>
- -->
+<parameter name="ReportLocation" value="reports"></parameter>
+<parameter name="remoteURL" value="http://192.168.1.4:4444/wd/hub"></parameter>
+<parameter name="baseURL" value="http://opensource.demo.orangehrmlive.com/"></parameter>
+    <parameter name="internal" value="true"></parameter>
+    <!--
+        <test name="test_ff" >
+            <parameter name="OS" value="WIN8_1"></parameter>
+            <parameter name="browser" value="firefox"></parameter>
+            <parameter name="version" value="34"></parameter>
+
+            <classes>
+               <class name="com.qamate.orangehrm_selenium_automation.Tests.LoginTest" >
+               </class>
+            </classes>
+        </test>
+
+
+            <test name="test_ie" >
+                <parameter name="OS" value="WIN8_1"></parameter>
+                <parameter name="browser" value="internet explorer"></parameter>
+                <parameter name="version" value="34"></parameter>
+                <classes>
+                    <class name="com.qamate.orangehrm_selenium_automation.Tests.LoginTest" >
+                    </class>
+                </classes>
+            </test>
+-->
+            <test name="test_chrome" >
+                <parameter name="OS" value="WINDOWS"></parameter>
+                <parameter name="browser" value="chrome"></parameter>
+                <parameter name="version" value="ANY"></parameter>
+                <classes>
+                    <class name="com.qamate.orangehrm_selenium_automation.Tests.LoginTest" >
+                    </class>
+                </classes>
+            </test>
+<!--
+            <test name="reportingTest" >
+                <classes>
+                   <class name="com.kagrana.base.BaseActionsTest" >
+                   </class>
+                </classes>
+            </test>
+            <test name="reportingTest1" >
+                <classes>
+                   <class name="com.kagrana.base.BaseActionsTest1" >
+                   </class>
+                </classes>
+            </test>
+            <test name="reportingTest2" >
+                <classes>
+                   <class name="com.kagrana.base.BaseActionsTest2" >
+
+                   </class>
+                </classes>
+            </test>
+            <test name="reportingTest3" >
+                <classes>
+                   <class name="com.kagrana.base.BaseActionsTest3" >
+
+                   </class>
+                </classes>
+            </test>
+            <test name="reportingTest4" >
+                <classes>
+                   <class name="com.kagrana.base.BaseActionsTest4" >
+
+                   </class>
+                </classes>
+            </test>
+             -->
 </suite>

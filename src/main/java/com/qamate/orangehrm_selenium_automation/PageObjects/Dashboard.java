@@ -10,6 +10,7 @@ public class Dashboard extends BasePageObjects {
 	private static final By byWelcome = By.id("welcome");
 	
 	public static WebElement getWelcomeMessage(WebDriver driver){
+		waitForClickable(null,driver,byWelcome,40);
 		return driver.findElement(byWelcome);
 	}
 }

@@ -12,7 +12,7 @@ public class LoginTest extends BaseActions {
 	@Test
 	public void sucessfullLoginTest(){
 		Login login = new Login(driver);
-		login.perform("qamate", "qamate");
+		login.perform("admin", "admin");
 		Assert.assertTrue(Dashboard.getWelcomeMessage(driver).getText().contains("Welcome"));
 	}
 	@Test
