@@ -62,7 +62,7 @@
       <scope>test</scope>
     </dependency>
       <dependency>
-          <groupId>com.kagrana</groupId>
+          <groupId>in.mayurshah</groupId>
           <artifactId>selenium-helper</artifactId>
           <version>1.0.0</version>
       </dependency>

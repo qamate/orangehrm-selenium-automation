@@ -1,7 +1,7 @@
 package com.qamate.orangehrm_selenium_automation.PageObjects;
 
-import com.kagrana.base.BasePageObjects;
-import com.kagrana.util.Log;
+import in.mayurshah.base.BasePageObjects;
+import in.mayurshah.util.Log;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
