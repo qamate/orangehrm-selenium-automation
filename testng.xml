@@ -27,7 +27,7 @@
                     </class>
                 </classes>
             </test>
--->
+
             <test name="test_chrome" >
                 <parameter name="OS" value="WINDOWS"></parameter>
                 <parameter name="browser" value="chrome"></parameter>
@@ -36,7 +36,16 @@
                     <class name="com.qamate.orangehrm_selenium_automation.Tests.LoginTest" >
                     </class>
                 </classes>
-            </test>
+            </test>-->
+    <test name="test_chrome" >
+        <parameter name="OS" value="WINDOWS"></parameter>
+        <parameter name="browser" value="chrome"></parameter>
+        <parameter name="version" value="ANY"></parameter>
+        <classes>
+            <class name="com.qamate.orangehrm_selenium_automation.Tests.GoogleTest" >
+            </class>
+        </classes>
+    </test>
 <!--
             <test name="reportingTest" >
                 <classes>
