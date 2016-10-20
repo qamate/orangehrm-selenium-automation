@@ -2,9 +2,9 @@
  
 <suite name="smoke-test-suite" parallel="tests" thread-count="5">
 <parameter name="ReportLocation" value="reports"></parameter>
-<parameter name="remoteURL" value="http://192.168.1.4:4444/wd/hub"></parameter>
+<parameter name="remoteURL" value="http://localhost:4444/wd/hub"></parameter>
 <parameter name="baseURL" value="http://opensource.demo.orangehrmlive.com/"></parameter>
-    <parameter name="internal" value="true"></parameter>
+    <parameter name="internal" value="false"></parameter>
     <!--
         <test name="test_ff" >
             <parameter name="OS" value="WIN8_1"></parameter>
