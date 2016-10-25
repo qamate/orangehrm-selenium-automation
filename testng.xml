@@ -3,7 +3,8 @@
 <suite name="smoke-test-suite" parallel="tests" thread-count="5">
 <parameter name="ReportLocation" value="reports"></parameter>
 <parameter name="remoteURL" value="http://localhost:4444/wd/hub"></parameter>
-<parameter name="baseURL" value="http://opensource.demo.orangehrmlive.com/"></parameter>
+<!-- <parameter name="baseURL" value="http://opensource.demo.orangehrmlive.com/"></parameter> -->
+ <parameter name="baseURL" value="http://www.google.com/"></parameter>
     <parameter name="internal" value="false"></parameter>
     <!--
         <test name="test_ff" >
